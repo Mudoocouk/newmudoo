@@ -2,10 +2,3 @@
 *.inc
 *.html
 *.css
-!/system/inc/config.php
-!/system/inc/init.php
-!/system/inc/consturctot_functions.php
-!/system/inc/constructor_functions.php
-!/views/index.php
-!/views/rss.php
-!/views/404.php
