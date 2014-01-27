@@ -9,7 +9,8 @@
         <?php
         $url = fURL::getDomain();
         $url2 = fURL::getQueryString();
-        echo $url.'<br>'.$url2.'<br> this is all';
+        $url3 = fURL::get();
+        echo $url.'<br>'.$url2.'<br>'.$url3.'<br> this is all';
         // put your code here
         ?>
     </body>
