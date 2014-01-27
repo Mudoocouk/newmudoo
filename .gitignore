@@ -2,3 +2,5 @@
 *.inc
 *.html
 *.css
+!/system/inc/config.php
+!/system/inc/init.php
