@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * This will have all the configs in here and som other stuff too
  */
@@ -16,7 +16,7 @@ fCore::enableExceptionHandling('html');
 
 fTimestamp::setDefaultTimezone('Europe/London');
 
-fAuthorization::setLoginPage(URL_ROOT . 'log_in');
+//fAuthorization::setLoginPage(URL_ROOT . 'log_in');
 
 // This prevents cross-site session transfer
 fSession::setPath(DOC_ROOT . '/storage/session/');
@@ -50,4 +50,4 @@ function __autoload($class)
 	throw new Exception('The class ' . $class . ' could not be loaded');
 }
 
-?>
+

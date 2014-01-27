@@ -1,4 +1,4 @@
-<?
+<?php
 
 /**
  * Creates functions for all classes meant to be instantiated in client code to allow for constructor method chaining
@@ -40,4 +40,4 @@ function fTimestamp($datetime=NULL, $timezone=NULL) {
 	return new fTimestamp($datetime, $timezone);    
 }
  
-?>
+

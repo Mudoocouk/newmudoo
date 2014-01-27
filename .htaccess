@@ -1,0 +1,31 @@
+options -Indexes -MultiViews
+Options +FollowSymlinks
+
+#################
+## php settings #
+#################
+
+php_flag	register_globals	0
+php_flag	magic_quotes_gpc	0
+
+############
+## routing #
+############
+
+RewriteEngine	On
+
+## the real rewrite rules
+
+##RewriteRule		^$		index.php?type=html			[L]
+
+## Prevent access to anything that didn't match so far and isn't in /sup/
+
+##RewriteCond		%{ENV:REDIRECT_STATUS}										^$ 
+##RewriteRule		^(?!sup/|robots\.txt).										views/404.php					[L]
+
+#########################
+## performance settings #
+#########################
+
+## gzip plaintext being sent to the user
+ AddOutputFilterByType	DEFLATE		text/html text/plain application/javascript application/x-javascript text/css

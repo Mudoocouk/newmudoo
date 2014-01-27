@@ -1,14 +1,18 @@
-<?
-echo 'this is just in testing times so will need to be updated soon.';
-        // put your code here
+<?php
 include './system/inc/init.php';
 
-$type    = fRequest::get('type');
+        // put your code here
+$url = fURL::getDomain();
+if ($url != 'https://stagingdev.mudoo.co.uk')
+{
+    fURL::redirect('https://stagingdev.mudoo.co.uk');
+}
+
+ $type    = fRequest::get('type');
 
 if ('html' == $type) {
 	include './views/index.php';
 }
 if ('rss' == $type) {
-	include './views/rss.php';	
+        include './views/rss.php';
 }
-?>
