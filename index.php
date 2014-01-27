@@ -4,7 +4,6 @@ echo 'this is just in testing times so will need to be updated soon.';
 include './system/inc/init.php';
 
 $type    = fRequest::get('type');
-$meetups = Meetup::findCurrent();
 
 if ('html' == $type) {
 	include './views/index.php';
