@@ -16,12 +16,13 @@ RewriteEngine	On
 
 ## the real rewrite rules
 
-##RewriteRule		^$		index.php?type=html			[L]
-
+RewriteRule		^$		index.php?type=html			[L]
+RewriteRule		^index.php$		index.php?type=html	[L]
+RewriteRule		^rss$		index.php?type=rss	    [L]
 ## Prevent access to anything that didn't match so far and isn't in /sup/
 
-##RewriteCond		%{ENV:REDIRECT_STATUS}										^$ 
-##RewriteRule		^(?!sup/|robots\.txt).										views/404.php					[L]
+RewriteCond		%{ENV:REDIRECT_STATUS}										^$ 
+RewriteRule		^(?!sup/|robots\.txt).										views/404.php					[L]
 
 #########################
 ## performance settings #
