@@ -5,8 +5,8 @@ include dirname(__FILE__) . '/config.php';
 //$tmpl->set('header', 'header.php');
 //$tmpl->set('footer', 'footer.php');
 
-//$db = new fDatabase('mysql', 'mudoo_staging', 'mudoo_staging', 'we9529xn@5');
-//ORMDatabase::attach($db);
+$db = new fDatabase('mysql', 'mudoo_staging', 'mudoo_staging', 'we9529xn@5' , 'localhost');
+fORMDatabase::attach($db);
 
 fSession::open();
 
